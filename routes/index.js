@@ -1,0 +1,10 @@
+const router = require("express").Router();
+const test = require("./root/test");
+const uploads = require("./root/uploadFile");
+const product = require("./root/productRoute");
+const users = require("./root/userRoute");
+router.use("/test", test);
+router.use("/products", product);
+router.use("/uploads", uploads);
+router.use("/users", users);
+module.exports = router;
